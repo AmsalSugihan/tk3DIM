@@ -19,5 +19,5 @@ mix.js([
     'resources/assets/js/hoverable-collapse.js',
 ], 'public/js/common.js')
     .sass('resources/sass/app.scss', 'public/css')
-    .postCss('resources/assets/css/style.css','public/css/common.css')
+    .postCss('resources/assets/css/style.css', 'public/css/common.css')
     .sourceMaps();

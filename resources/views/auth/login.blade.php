@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Admin</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ url('/vendors/mdi/css/materialdesignicons.min.css') }}">
-    <link rel="stylesheet" href="{{ url('/vendors/css/vendor.bundle.base.css') }}">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ asset('css/common.css') }}">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ url('images/favicon.ico') }}" />
-  </head>
-  <body>
+@extends('layouts.app')
+
+@section('content')
     <div class="container-scroller">
       <div class="container-fluid page-body-wrapper full-page-wrapper">
         <div class="content-wrapper d-flex align-items-center auth">
@@ -57,7 +39,7 @@
                     </div>
                     <!-- <a href="{{ route('password.request') }}" class="auth-link text-black">Forgot password?</a> -->
                   </div>
-                  <div class="text-center mt-4 font-weight-light"> Don't have an account? <a href="route('register')" class="text-primary">Create</a>
+                  <div class="text-center mt-4 font-weight-light"> Don't have an account? <a href="{{route('register')}}" class="text-primary">Create</a>
                   </div>
                 </form>
               </div>
@@ -68,11 +50,4 @@
       </div>
       <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="{{ url('/vendors/js/vendor.bundle.base.js') }}"></script>
-    <script src="{{ url('/vendors/chart.js/Chart.min.js') }}"></script>
-    <script src="{{ asset('js/common.js') }}"></script>
-    <!-- endinject -->
-  </body>
-</html>
+@endsection
